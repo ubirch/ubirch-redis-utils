@@ -11,7 +11,7 @@ case class RedisConfig(host: String, port: Int, password: Option[String])
 
 object Config extends ConfigBase {
 
-  def redisConfig = RedisConfig(
+  def redisConfig: RedisConfig = RedisConfig(
     host = config.getString(ConfigKeys.REDIS_HOST),
     port = config.getInt(ConfigKeys.REDIS_PORT),
     password = getPassword
