@@ -22,7 +22,7 @@
 
     <groupId>com.ubirch.util</groupId>
     <artifactId>ubirch-redis-utils_${scala.major.version}</artifactId>
-    <version>0.6.1</version>
+    <version>0.6.2-SNAPSHOT</version>
     <packaging>jar</packaging>
 
     <licenses>
@@ -76,8 +76,8 @@
         <scala.compat.version>2.11</scala.compat.version>
         <scalatest.version>3.0.5</scalatest.version>
 
-        <ubirch-config.version>0.2.4</ubirch-config.version>
-        <ubirch-deep-check.version>0.4.1</ubirch-deep-check.version>
+        <ubirch-config.version>0.2.5-SNAPSHOT</ubirch-config.version>
+        <ubirch-deep-check.version>0.4.2-SNAPSHOT</ubirch-deep-check.version>
         <akka.version>2.5.11</akka.version>
         <rediscala.version>1.8.0</rediscala.version>
         <scala-logging.version>3.7.2</scala-logging.version>
@@ -162,7 +162,7 @@
         </repository>
         <repository>
             <id>io.cloudrepo</id>
-            <url>https://ubirch.mycloudrepo.io/public/repositories/ubirch-utils-mvn</url>
+            <url>https://ubirch.mycloudrepo.io/public/repositories/mvn-public</url>
         </repository>
     </repositories>
 
@@ -171,7 +171,7 @@
         <repository>
             <id>io.cloudrepo</id>
             <name>Ubirch Public Cloud Repo Repository</name>
-            <url>https://ubirch.mycloudrepo.io/repositories/ubirch-utils-mvn</url>
+            <url>https://ubirch.mycloudrepo.io/repositories/mvn-public</url>
         </repository>
     </distributionManagement>
 
