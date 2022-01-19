@@ -22,7 +22,7 @@
 
     <groupId>com.ubirch.util</groupId>
     <artifactId>ubirch-redis-utils_${scala.major.version}</artifactId>
-    <version>0.6.2-SNAPSHOT</version>
+    <version>0.6.2</version>
     <packaging>jar</packaging>
 
     <licenses>
@@ -76,8 +76,8 @@
         <scala.compat.version>2.13</scala.compat.version>
         <scalatest.version>3.2.10</scalatest.version>
 
-        <ubirch-config.version>0.2.5-SNAPSHOT</ubirch-config.version>
-        <ubirch-deep-check.version>0.4.2-SNAPSHOT</ubirch-deep-check.version>
+        <ubirch-config.version>0.2.5</ubirch-config.version>
+        <ubirch-deep-check.version>0.4.2</ubirch-deep-check.version>
         <akka.version>2.6.18</akka.version>
         <rediscala.version>1.9.0</rediscala.version>
         <scala-logging.version>3.9.4</scala-logging.version>
@@ -283,6 +283,19 @@
                 <configuration>
                     <skip>false</skip>
                 </configuration>
+            </plugin>
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-source-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <id>attach-sources</id>
+                        <goals>
+                            <goal>jar</goal>
+                        </goals>
+                    </execution>
+                </executions>
             </plugin>
         </plugins>
     </build>
